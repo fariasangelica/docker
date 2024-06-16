@@ -1,0 +1,18 @@
+# existem dois estilos block e flow
+# é mais fácil de ler por humanos
+
+# block
+hot1: docker
+datacenter1:
+  location: São Paulo
+  router: 42
+roles1:
+  - web
+  - dns
+
+
+# flow (parece com json)
+host2: "docker"
+datacenter2: { location: 
+  São Paulo, router: 42 }
+roles2: [ web, dns ]
