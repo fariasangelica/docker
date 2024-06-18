@@ -1,4 +1,4 @@
-host: geek  # chave e valor
+host: docker  # chave e valor
 datacenter: # dentro de datacenter existe dois pares de chaves e valores
   location: São Paulo
   router: 42

@@ -1,0 +1,9 @@
+# Sequenciais podem ser listas, arrays, coleções e até uma combinação entre elas.
+
+# lista estilo bloco
+roles:
+  - webserver
+  - database
+
+# lista estilo flow
+payload2: [ bitcoin, ethereum ]

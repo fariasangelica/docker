@@ -1,0 +1,16 @@
+# Tags para configurar um tipo de dado ou uma URL ou URI usando um prefixo "%TAG"
+
+%TAG ! tag:host:docker:
+---
+host: docker
+datacenter:
+  location: !DOCKER São Paulo
+  router: "42"
+  switch: "32"
+---
+host: kubernetes
+datacenter:
+  location: Colorado
+  router: !!str 45
+  switch: !!str 23
+   

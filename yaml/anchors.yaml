@@ -1,0 +1,17 @@
+# Armazenar e reutilizar dados2
+
+---
+host: exp001
+datacenter:
+  location: &RJ Rio de Janeiro
+---
+host: exp002
+datacenter:
+  location: *RJ
+---
+roles: &ghost
+  - webserver
+  - database
+...
+---
+roles: *ghost

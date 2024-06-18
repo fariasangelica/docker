@@ -1,0 +1,14 @@
+
+
+# chave dudplicada
+host: docker
+datacenter:
+  location: São Paulo
+  router: 42
+  switch: 34
+--- # (nova configuração) não gera o conflito entre as chaves iguais
+host: kubernetes
+datacenter:
+  location: Colorado
+  router: 23
+  switch: 21

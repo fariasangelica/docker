@@ -1,0 +1,9 @@
+# Mapear uma chave a um valor
+
+# Mapeamento comum
+host: docker
+datacenter1: # tem dois mapas: location e router
+  location: São Paulo
+  router: 42
+
+  

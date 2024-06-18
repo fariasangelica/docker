@@ -1,0 +1,9 @@
+# cerquilha
+
+# Configuração do host 
+---
+host: docker
+datacenter:
+  location: São Paulo
+  router: 42 
+  switch: 34

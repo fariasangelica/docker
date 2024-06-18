@@ -40,7 +40,32 @@ Repositório dedicado ao aprendizado e aprofundamento de Docker.
 > Objetivos:
 > - Fácil leitura;
 > - Portátil;
-> - Integrar facilmente com outras linguagens,
+> - Integrar facilmente com outras linguagens;
 > - Fácil de implementar.
-
-
+>
+> ## O que são imagens em um container?
+> - Uma imagem é criada a partir de um arquivo chamado Dockerfile.
+>
+> - São templates, modelos.
+>
+> - Primeiro o docker tenta encontrar uma imagem localmente e se não encontrar, então ele tenta encontrar no docker hub.
+>
+> - Não podemos confundir as imagens de containers com as imagens de serviço cloud como Amazon AWS, Google Cloud Plaftorm e Microsoft Azure.
+>
+> - Após a criação do container, ele já está funcionando.
+>
+> - Após criarmos um container a partir de uma imagem está imagem fica armazenada no nosso computador local. Se quiser criar um outro container com a mesma imagem não será necessário baixa-la novamente.
+>
+> ## Sistemas de Arquivos em Camadas
+> - Filesystem é sistema de arquivo utilziado pela ferramenta.
+>
+> - O sistema de arquivos do Docker é chamado de Layered, ou seja, é um sistema de arquivos em camadas.
+>
+> ### Sistemas de arquivos
+>
+> Um sistema de arquivos comum (Linux/Unix), possui basicamente duas camadas:
+> - bootfs: Onde fica o sistema de Boot do sistema operacional e o kernel
+>
+> - rootfs: Inclui o sistema de arquivos do sistema operacional, incluindo a arquitetura de diretórios, como /dev, /prov, /bin, /etc, /lib/, /usr e /tmp assim como os arquivos de configuração e bonários do sistema operacional.
+>
+> -

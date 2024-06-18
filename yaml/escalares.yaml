@@ -1,0 +1,26 @@
+# Escalares são valores únicos.
+
+host: docker
+datacenter:
+  location: São Paulo
+  router: 32 
+  switch: 34
+roles:
+  - webserver
+  - database
+
+
+# mapeamento (múltiplas linhas)
+funcionamento: |
+  segunda - das 08:00 às 17:00
+  terça   - das 08:00 às 17:00
+  quarta  - das 08:00 às 17:00
+  quinta  - das 08:00 às 17:00
+  sexta   - das 08:00 às 17:00
+  sábado  - das 08:00 às 17:00
+  domingo - das 08:00 às 17:00
+ 
+comentarios: > # linhas não serão respeitadas
+  Temos alto uso de CPU
+  desde 04/10/2020.
+  Estamos investigando.
