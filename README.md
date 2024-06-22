@@ -68,4 +68,18 @@ Repositório dedicado ao aprendizado e aprofundamento de Docker.
 >
 > - rootfs: Inclui o sistema de arquivos do sistema operacional, incluindo a arquitetura de diretórios, como /dev, /prov, /bin, /etc, /lib/, /usr e /tmp assim como os arquivos de configuração e bonários do sistema operacional.
 >
-> -
+> - Quando o sistema operacional é iniciado ele carrega o rootfs primeiramente em modo somente leitura, verifica sua integridade e em seguida remonta- como leitura/escrita e assim ficando disponível para o usuário e aplicações.
+>
+> - No docker a camada de escrita que o processo/aplicação visualiza não é o mesmo roofts base do sistema mas sim uma camada de abstração do rootfs. Isso faz com que um container torne-se portável, pois as modificações realizadas não são aplicadas ao sistema origem do container e sim na camada a qual o sistema visualiza.
+>
+> - Boofts em vez de ser único por sistema /container é compartilhado entre eles.
+>
+> - Roofts é isolado por camada, ou seja, o que deve ser comum entre o host e o container é compartilhado via AUFS, que monta uma camada de leitura/escrita em cima do sistema de arquivos que é somente leitura. Isso garante que modificações feitas dentro do container não afetam o sistema de arquivos do host.
+>
+> ![alt text](image.png)
+>
+> Arquitetura do sistema de arquivos do Docker.
+> 
+> ![alt text](image-1.png)
+>
+> - Imagens são compartilhadas entre containers Docker.
