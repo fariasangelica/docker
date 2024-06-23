@@ -83,3 +83,21 @@ Repositório dedicado ao aprendizado e aprofundamento de Docker.
 > ![alt text](image-1.png)
 >
 > - Imagens são compartilhadas entre containers Docker.
+>
+> ## Comandos importantes
+> - docker container ls > listar os containers.
+>
+> - docker ps > lista todos os containers em execução.
+>
+> - docker ps - a > containers parados e em execução.
+>
+> - docker pull postgres > baixa imagem.
+>
+> - docker image ls > lista imagens do computador.
+>
+> - docker image rm > deletar imagem colocando id.
+>
+> - docker image inspect (nome ou id) > inspecionando a imagem.
+>
+> Se existir um container com uma imagem, não conseguimos deletar a imagem a não ser que force esse processo:
+> - docker image rm (id) -f > força o delete.
