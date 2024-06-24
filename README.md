@@ -1,8 +1,8 @@
-# Aprendendo Containers com Docker
+# Containers com Docker
 
 <img width="350" alt="image" src="https://github.com/fariasangelica/docker/assets/98922466/22c08068-fe59-44e0-b747-9b9c8c7e861d">
 
-Repositório dedicado ao aprendizado e aprofundamento de Docker.
+Repositório criado para o aprofundamento de Containers com Docker.
 
 ### O que são containers?
 > Conhecidos também por Containers Linux, são uma maneira de criar ambientes isolados que podem executar código enquanto compartilham um único sistema operacional.
@@ -101,3 +101,21 @@ Repositório dedicado ao aprendizado e aprofundamento de Docker.
 >
 > Se existir um container com uma imagem, não conseguimos deletar a imagem a não ser que force esse processo:
 > - docker image rm (id) -f > força o delete.
+>
+> ## Criando um container a partir de uma imagem
+> Baixando a imagem:
+> - docker pull ubuntu
+> 
+> Criando um container a partir da imagem:
+> - docker run ubuntu
+>   ![image](https://github.com/fariasangelica/docker/assets/98922466/3a7b4971-5dc1-4455-a8c9-af9f0613c1ff)
+>
+> Pedindo para escrever na saída o texto "Aprendendo Docker":
+> ![image](https://github.com/fariasangelica/docker/assets/98922466/20b6556d-ec92-45b1-af36-7417270993f8)
+>
+> Lembrando: Ele não fica em execução.
+>
+> Observação: Quando for baixar uma imagem, tente colocar a versão ao invés de deixar só o latest para futuramente não quebra-la. Especifique-a. ``` docker pull postgres:13.1```, etc.
+
+
+
